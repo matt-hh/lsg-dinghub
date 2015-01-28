@@ -1,0 +1,13 @@
+source: 'dinghub.sass' # replace with your default Sass/SCSS file name
+title: 'Living Style Guide for dinghub'
+
+
+style:
+  base-font: 'Montserrat'
+
+header: |
+  <div class="cover">
+    <div class="cover--container">
+      <h1 class="livingstyleguide--page-title">Living Style Guide for dinghub</h1>
+    </div>
+  </div>
