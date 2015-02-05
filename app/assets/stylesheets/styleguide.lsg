@@ -3,11 +3,17 @@ title: 'Living Style Guide for dinghub'
 
 
 style:
-  base-font: 'Montserrat'
+  base-font: 'Open Sans'
 
 header: |
   <div class="cover">
     <div class="cover--container">
       <h1 class="livingstyleguide--page-title">Living Style Guide for dinghub</h1>
+    </div>
+  </div>
+
+footer: |
+  <div class="cover">
+    <div class="livingstyleguide--footer">
     </div>
   </div>

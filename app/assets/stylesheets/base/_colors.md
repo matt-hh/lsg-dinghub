@@ -3,6 +3,8 @@ Colors
 
 ```
 @colors
-- $red      -            $white      -
-- -         -            $black      -
+$white          -            -             -
+$lightest-gray  $light-gray  $middle-gray  $dark-gray
+-               $light-aqua  $middle-aqua  -
+-               -            $middle-blue  -
 ```
