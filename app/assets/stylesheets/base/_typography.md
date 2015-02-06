@@ -10,6 +10,11 @@ Font: Open Sans
 Default 0.75em (12px)
 ```
 
+```
+@font-example bold 0.75em 'Open Sans'
+5000 Dingos
+```
+
 ## @extend %huge-font
 
 ```

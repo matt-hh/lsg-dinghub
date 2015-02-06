@@ -1,0 +1,67 @@
+.layout
+  background: $lightest_gray
+  padding: 0
+  margin: 0
+  min-width: 1024px
+
+.layout-container
+  padding: 1em 0
+
+.layout-header
+  background: $dark_gray
+  height: 2.5em
+
+.layout-header-container
+  width: 90%
+  margin: 0 1% 0 9%
+  +clearfix
+  *
+    float: left
+
+.layout-header-logo
+  padding: 0
+  margin: 0 1em 0 0
+  color: $white
+  text-align: right
+  text-decoration: none
+  @extend %huge-font
+  line-height: 2em
+
+.layout-header-dingos
+  text-align: right
+  float: right
+  color: $white
+  @extend %default-font
+  line-height: 3.33em
+  font-weight: bold
+  width: 10.83em
+
+.layout-header-nav
+  color: $light-aqua
+  float: right
+  @extend %large-font
+  line-height: 2.85em
+
+.layout-header-searchform
+  border: 1px solid $white
+  border-radius: 1em
+  color: $white
+  width: 9.5em
+  height: 1.5em
+  margin-top: 0.5em
+  +clearfix
+
+.layout-header-searchform-label
+  width: 2em
+  height: 2em
+  float: left
+  @extend %default-font
+
+.layout-header-searchform-input
+  color: $white
+  background: transparent
+  border: 0
+  float: left
+  width: 9.5em
+  height: 1.9em
+  @extend %default-font

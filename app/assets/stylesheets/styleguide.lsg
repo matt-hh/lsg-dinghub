@@ -17,3 +17,7 @@ footer: |
     <div class="livingstyleguide--footer">
     </div>
   </div>
+
+styleguide-sass: |
+  .livingstyleguide--example.-lsg-has-full-width
+    padding: 0
