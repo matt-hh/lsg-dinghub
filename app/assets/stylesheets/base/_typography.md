@@ -1,36 +1,32 @@
 Typography
 ==========
 
-base-size: 16px
+Font: Open Sans
 
-## 0.75em (12px) Default 
-
-@extend %default-font
+## @extend %default-font
 
 ```
 @font-example normal 0.75em 'Open Sans'
+Default 0.75em (12px)
 ```
 
-## 1.25em (20px) Logo 
-
-@extend %huge-font
+## @extend %huge-font
 
 ```
 @font-example bold 1.25em 'Open Sans'
+Logo 1.25em (20px) 
 ```
 
-## 0.875em (14px) Navigation (Maker / Concepts)
-
-@extend %large-font
+## @extend %large-font
 
 ```
 @font-example normal 0.875em 'Open Sans'
+Navigation (Maker / Concepts) 0.875em (14px) 
 ```
 
-## 0.8125em (13px) "Deck selection", Buttons (Deck, Add, Edit, etc)
-
-@extend %middle-font
+## @extend %middle-font
 
 ```
 @font-example normal 0.8125em 'Open Sans'
+"Deck selection", Buttons (Deck, Add, Edit, etc) 0.8125em (13px) 
 ```
