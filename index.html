@@ -83,11 +83,12 @@ body, .livingstyleguide--example.-lsg-has-full-width, .-lsg-has-full-width.livin
 
 .layout-header {
   background: #666666;
-  height: 2.5em; }
+  height: 2.5em;
+  position: relative; }
 
 .layout-header-container {
-  width: 90%;
-  margin: 0 1% 0 9%; }
+  width: 80%;
+  margin: 0 1% 0 19%; }
   .layout-header-container:after {
     content: "";
     display: table;
@@ -97,11 +98,13 @@ body, .livingstyleguide--example.-lsg-has-full-width, .-lsg-has-full-width.livin
 
 .layout-header-logo {
   padding: 0;
-  margin: 0 1em 0 0;
+  margin: 0 1em;
   color: #ffffff;
-  text-align: right;
+  text-align: left;
   text-decoration: none;
-  line-height: 2em; }
+  line-height: 2em;
+  position: absolute;
+  left: 1em; }
 
 .layout-header-dingos {
   text-align: right;
@@ -3005,8 +3008,8 @@ Navigation (Maker / Concepts) 0.875em (14px)
 <div class="livingstyleguide--example -lsg-has-full-width">
   <div class="layout">
   <div class="layout-header">
+    <a class="layout-header-logo" href="#">Dinghub</a>
     <div class="layout-header-container">
-      <a class="layout-header-logo" href="#">Dinghub</a>
       <div class="layout-header-dingos">
         3000 Dingos
       </div>
@@ -3033,8 +3036,8 @@ Navigation (Maker / Concepts) 0.875em (14px)
 </div>
 <pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><b>.layout</b>
   <b>.layout-header</b>
+    <em>%a</em><b>.layout-header-logo</b>(href=&#39;#&#39;) Dinghub
     <b>.layout-header-container</b>
-      <em>%a</em><b>.layout-header-logo</b>(href=&#39;#&#39;) Dinghub
       <b>.layout-header-dingos</b>
         3000 Dingos
       <em>%nav</em><b>.layout-header-nav</b>
