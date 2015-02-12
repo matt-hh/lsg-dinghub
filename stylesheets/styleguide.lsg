@@ -19,5 +19,7 @@ footer: |
   </div>
 
 styleguide-sass: |
+  .livingstyleguide--example
+    background: #f9f9f9
   .livingstyleguide--example.-lsg-has-full-width
     padding: 0
