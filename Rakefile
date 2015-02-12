@@ -1,12 +1,12 @@
 namespace :lsg do
   task :compile do
-    system 'bundle exec livingstyleguide compile app/assets/stylesheets/styleguide.lsg public/styleguide.html'
+    system 'bundle exec livingstyleguide compile app/assets/stylesheets/styleguide.lsg styleguide.html'
   end
 
   task :publish do
     Rake::Task['lsg:compile'].invoke
     system 'git co gh-pages'
-    system 'mv public/styleguide.html index.html'
+    system 'mv styleguide.html index.html'
     system 'git add index.html'
     system "git ci -am 'Update styleguide (#{`date`})'"
     system 'git push origin gh-pages'

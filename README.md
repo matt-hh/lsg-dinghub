@@ -15,4 +15,4 @@ livingstyleguide for dinghub
     guard
 
     # open html file
-    open public/styleguide.html
+    open styleguide.html
