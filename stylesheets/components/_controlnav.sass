@@ -8,28 +8,19 @@
   margin-bottom: 0.3125em
 
 .controlnav-button
-  border: none
+  @extend .btn
   width: 6em
-  height: 1.5625em
   text-align: left
-  padding-left: 1.5em
+  padding: 0.15em 1em 0.15em 1.5em
   // line-height: 1.5625em
-  font-size: 100%
   span
     @extend %middle-font
     // font-weight: bold
-  background: $dark-gray
-  color: $white
   border-top-left-radius: 1em
   border-bottom-left-radius: 1em
-  cursor: pointer
+  border-top-right-radius: 0
+  border-bottom-right-radius: 0
   &.is-active,
   &:hover
     background: $middle-aqua
     color: $white
-  &.is-disabled,
-  &:disabled,
-  &:disabled:hover
-    color: $middle_gray
-    background: $dark-gray
-    cursor: default
