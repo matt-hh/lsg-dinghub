@@ -28,6 +28,11 @@ for(var e,l='article aside footer header nav section time picture'.split(' ');e=
   font-size: 0.875em;
   font-family: "Open Sans", sans-serif; }
 
+.controlnav-button span {
+  font-weight: normal;
+  font-size: 0.8125em;
+  font-family: "Open Sans", sans-serif; }
+
 @font-face {
   font-family: "Ionicons";
   src: url("./fonts/ionicons.eot?v=2.0.0");
@@ -67,7 +72,7 @@ body, .livingstyleguide--example.-lsg-has-full-width, .-lsg-has-full-width.livin
   min-width: 1024px; }
 
 .layout-container {
-  padding: 1em 0; }
+  padding: 2em 0 1em 0; }
   .layout-container:after {
     content: "";
     display: table;
@@ -99,7 +104,7 @@ body, .livingstyleguide--example.-lsg-has-full-width, .-lsg-has-full-width.livin
   text-align: right;
   float: right;
   color: #ffffff;
-  line-height: 3.33em;
+  line-height: 3.6em;
   font-weight: bold;
   width: 10.83em; }
 
@@ -145,8 +150,37 @@ body, .livingstyleguide--example.-lsg-has-full-width, .-lsg-has-full-width.livin
 .layout-sidebar-right {
   float: left;
   width: 14%;
-  min-width: 8.5em;
-  text-align: right; }
+  min-width: 8.5em; }
+
+.controlnav {
+  width: 100%;
+  text-align: right;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.controlnav-item {
+  margin-bottom: 0.3125em; }
+
+.controlnav-button {
+  border: none;
+  width: 6em;
+  height: 1.5625em;
+  text-align: left;
+  padding-left: 1.5em;
+  font-size: 100%;
+  background: #666666;
+  color: #ffffff;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  cursor: pointer; }
+  .controlnav-button.is-active, .controlnav-button:hover {
+    background: #3cad9d;
+    color: #ffffff; }
+  .controlnav-button.is-disabled, .controlnav-button:disabled, .controlnav-button:disabled:hover {
+    color: #9a9898;
+    background: #666666;
+    cursor: default; }
 
 .livingstyleguide, .livingstyleguide--container, .livingstyleguide--footer, .livingstyleguide--logo, .livingstyleguide--paragraph,
 .livingstyleguide--code-block,
@@ -2986,7 +3020,7 @@ Navigation (Maker / Concepts) 0.875em (14px)
       Content
     </div>
     <div class="layout-sidebar-right">
-      Right sidebar
+      Control navigation
     </div>
   </div>
 </div>
@@ -3007,7 +3041,45 @@ Navigation (Maker / Concepts) 0.875em (14px)
     <b>.layout-main</b>
       Content
     <b>.layout-sidebar-right</b>
-      Right sidebar</code></pre>
+      Control navigation</code></pre><p class="livingstyleguide--paragraph">First element with class .layout should be the body-element.</p>
+<h2 class="livingstyleguide--headline" id="control-navigation"><a class="livingstyleguide--anchor" href="#control-navigation"></a>Control navigation</h2>
+<div class="livingstyleguide--example">
+  <ul class="controlnav">
+  <li class="controlnav-item">
+    <button class="controlnav-button is-active">
+      <span>Active</span>
+    </button>
+  </li>
+  <li class="controlnav-item">
+    <button class="controlnav-button is-disabled">
+      <span>Disabled</span>
+    </button>
+  </li>
+  <li class="controlnav-item">
+    <button class="controlnav-button" disabled="">
+      <span>Disabled</span>
+    </button>
+  </li>
+  <li class="controlnav-item">
+    <button class="controlnav-button">
+      <span>Default</span>
+    </button>
+  </li>
+</ul>
+</div>
+<pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><em>%ul</em><b>.controlnav</b>
+  <em>%li</em><b>.controlnav-item</b>
+    <em>%button</em><b>.controlnav-button.is-active</b>
+      <em>%span</em> Active
+  <em>%li</em><b>.controlnav-item</b>
+    <em>%button</em><b>.controlnav-button.is-disabled</b>
+      <em>%span</em> Disabled
+  <em>%li</em><b>.controlnav-item</b>
+    <em>%button</em><b>.controlnav-button</b>(disabled=&#39;&#39;)
+      <em>%span</em> Disabled
+  <em>%li</em><b>.controlnav-item</b>
+    <em>%button</em><b>.controlnav-button</b>
+      <em>%span</em> Default</code></pre>
 </div>
 <div class="cover">
   <div class="livingstyleguide--footer">
