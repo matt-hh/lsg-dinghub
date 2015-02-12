@@ -13,7 +13,7 @@ for(var e,l='article aside footer header nav section time picture'.split(' ');e=
 <style>
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-.layout-header-dingos, .layout-header-searchform-label, .layout-header-searchform-input {
+.btn span, .btn-icon span, .btn-default span, .btn-primary span, .controlnav-button span, .layout-header-dingos, .layout-header-searchform-label, .layout-header-searchform-input {
   font-weight: normal;
   font-size: 0.75em;
   font-family: "Open Sans", sans-serif; }
@@ -40,6 +40,19 @@ for(var e,l='article aside footer header nav section time picture'.split(' ');e=
   font-weight: normal;
   font-style: normal; }
 .ion, .ionicons,
+.ion-chevron-down:before,
+.ion-chevron-left:before,
+.ion-chevron-right:before,
+.ion-chevron-up:before,
+.ion-close:before,
+.ion-close-circled:before,
+.ion-close-round:before,
+.ion-minus:before,
+.ion-minus-circled:before,
+.ion-minus-round:before,
+.ion-navicon:before,
+.ion-navicon-round:before,
+.ion-navigate:before,
 .ion-search:before {
   display: inline-block;
   font-family: "Ionicons";
@@ -53,8 +66,73 @@ for(var e,l='article aside footer header nav section time picture'.split(' ');e=
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.ion-chevron-down:before {
+  content: ""; }
+
+.ion-chevron-left:before {
+  content: ""; }
+
+.ion-chevron-right:before {
+  content: ""; }
+
+.ion-chevron-up:before {
+  content: ""; }
+
+.ion-close:before {
+  content: ""; }
+
+.ion-close-circled:before {
+  content: ""; }
+
+.ion-close-round:before {
+  content: ""; }
+
+.ion-minus:before {
+  content: ""; }
+
+.ion-minus-circled:before {
+  content: ""; }
+
+.ion-minus-round:before {
+  content: ""; }
+
+.ion-navicon:before {
+  content: ""; }
+
+.ion-navicon-round:before {
+  content: ""; }
+
+.ion-navigate:before {
+  content: ""; }
+
 .ion-search:before {
   content: ""; }
+
+.btn, .btn-icon, .btn-default, .btn-primary, .controlnav-button {
+  color: #ffffff;
+  background: #666666;
+  border: 0;
+  cursor: pointer;
+  border-radius: 1em;
+  font-size: 100%;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  margin: 0.1em; }
+  .btn.is-disabled, .is-disabled.btn-icon, .is-disabled.btn-default, .is-disabled.btn-primary, .is-disabled.controlnav-button, .btn.is-disabled:hover, .is-disabled.btn-icon:hover, .is-disabled.btn-default:hover, .is-disabled.btn-primary:hover, .is-disabled.controlnav-button:hover, .btn:disabled, .btn-icon:disabled, .btn-default:disabled, .btn-primary:disabled, .controlnav-button:disabled, .btn:disabled:hover, .btn-icon:disabled:hover, .btn-default:disabled:hover, .btn-primary:disabled:hover, .controlnav-button:disabled:hover {
+    color: #9a9898;
+    background: #666666;
+    cursor: default; }
+  .btn span, .btn-icon span, .btn-default span, .btn-primary span, .controlnav-button span {
+    font-weight: bold; }
+
+.btn-icon {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.05em 0.4em; }
+
+.btn-primary {
+  color: #ffffff;
+  background: #386eb5; }
 
 html {
   box-sizing: border-box; }
@@ -169,24 +247,16 @@ body, .livingstyleguide--example.-lsg-has-full-width, .-lsg-has-full-width.livin
   margin-bottom: 0.3125em; }
 
 .controlnav-button {
-  border: none;
   width: 6em;
-  height: 1.5625em;
   text-align: left;
-  padding-left: 1.5em;
-  font-size: 100%;
-  background: #666666;
-  color: #ffffff;
+  padding: 0.15em 1em 0.15em 1.5em;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
-  cursor: pointer; }
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
   .controlnav-button.is-active, .controlnav-button:hover {
     background: #3cad9d;
     color: #ffffff; }
-  .controlnav-button.is-disabled, .controlnav-button:disabled, .controlnav-button:disabled:hover {
-    color: #9a9898;
-    background: #666666;
-    cursor: default; }
 
 .livingstyleguide, .livingstyleguide--container, .livingstyleguide--footer, .livingstyleguide--logo, .livingstyleguide--paragraph,
 .livingstyleguide--code-block,
@@ -3004,7 +3074,86 @@ Navigation (Maker / Concepts) 0.875em (14px)
 <div class="livingstyleguide--font-example" style="font: normal 0.8125em &#39;Open Sans&#39;">
 &quot;Deck selection&quot;, Buttons (Deck, Add, Edit, etc) 0.8125em (13px)
 </div>
-<h2 class="livingstyleguide--headline" id="layout"><a class="livingstyleguide--anchor" href="#layout"></a>Layout</h2>
+<h2 class="livingstyleguide--headline" id="button"><a class="livingstyleguide--anchor" href="#button"></a>Button</h2>
+<h3 class="livingstyleguide--sub-headline" id="default"><a class="livingstyleguide--anchor" href="#default"></a>Default</h3>
+<div class="livingstyleguide--example">
+  <button class="btn">
+  <span>Default</span>
+</button>
+<button class="btn is-disabled">
+  <span>Disabled</span>
+</button>
+<button class="btn" disabled="">
+  <span>Disabled</span>
+</button>
+</div>
+<pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><em>%button</em><b>.btn</b>
+  <em>%span</em> Default
+<em>%button</em><b>.btn.is-disabled</b>
+  <em>%span</em> Disabled
+<em>%button</em><b>.btn</b>(disabled=&#39;&#39;)
+  <em>%span</em> Disabled</code></pre><h3 class="livingstyleguide--sub-headline" id="primary"><a class="livingstyleguide--anchor" href="#primary"></a>Primary</h3>
+<div class="livingstyleguide--example">
+  <button class="btn-primary">
+  <span>Primary</span>
+</button>
+<button class="btn-primary is-disabled">
+  <span>Primary disabled</span>
+</button>
+</div>
+<pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><em>%button</em><b>.btn-primary</b>
+  <em>%span</em> Primary
+<em>%button</em><b>.btn-primary.is-disabled</b>
+  <em>%span</em> Primary disabled</code></pre><h3 class="livingstyleguide--sub-headline" id="default-for-icons"><a class="livingstyleguide--anchor" href="#default-for-icons"></a>Default for icons</h3>
+<div class="livingstyleguide--example">
+  <button class="btn-icon">
+  <span class="ion-icon ion-close-round"></span>
+</button>
+<button class="btn-icon">
+  <span class="ion-icon ion-minus-round"></span>
+</button>
+<button class="btn-icon">
+  <span class="ion-icon ion-navicon-round"></span>
+</button>
+<button class="btn-icon">
+  <span class="ion-icon ion-chevron-down"></span>
+</button>
+<button class="btn-icon btn-primary">
+  <span class="ion-icon ion-chevron-left"></span>
+</button>
+<button class="btn-icon">
+  <span class="ion-icon ion-chevron-right"></span>
+</button>
+<button class="btn-icon btn-primary">
+  <span class="ion-icon ion-chevron-up"></span>
+</button>
+</div>
+<pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><em>%button</em><b>.btn-icon</b>
+  <em>%span</em><b>.ion-icon.ion-close-round</b>
+<em>%button</em><b>.btn-icon</b>
+  <em>%span</em><b>.ion-icon.ion-minus-round</b>
+<em>%button</em><b>.btn-icon</b>
+  <em>%span</em><b>.ion-icon.ion-navicon-round</b>
+<em>%button</em><b>.btn-icon</b>
+  <em>%span</em><b>.ion-icon.ion-chevron-down</b>
+<em>%button</em><b>.btn-icon.btn-primary</b>
+  <em>%span</em><b>.ion-icon.ion-chevron-left</b>
+<em>%button</em><b>.btn-icon</b>
+  <em>%span</em><b>.ion-icon.ion-chevron-right</b>
+<em>%button</em><b>.btn-icon.btn-primary</b>
+  <em>%span</em><b>.ion-icon.ion-chevron-up</b></code></pre><h3 class="livingstyleguide--sub-headline" id="link-as-button"><a class="livingstyleguide--anchor" href="#link-as-button"></a>Link as button</h3>
+<div class="livingstyleguide--example">
+  <a class="btn" href="#">
+  <span>Default</span>
+</a>
+<a class="btn is-disabled" href="#">
+  <span>Disabled</span>
+</a>
+</div>
+<pre class="livingstyleguide--code-block"><code class="livingstyleguide--code"><em>%a</em><b>.btn</b>(href=&#39;#&#39;)
+  <em>%span</em> Default
+<em>%a</em><b>.btn.is-disabled</b>(href=&#39;#&#39;)
+  <em>%span</em> Disabled</code></pre><h2 class="livingstyleguide--headline" id="layout"><a class="livingstyleguide--anchor" href="#layout"></a>Layout</h2>
 <div class="livingstyleguide--example -lsg-has-full-width">
   <div class="layout">
   <div class="layout-header">
