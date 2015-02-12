@@ -11,6 +11,7 @@ namespace :lsg do
     run 'git co gh-pages'
     run 'mv styleguide.html index.html'
     run 'git add index.html'
+    run 'git add fonts'
     run "git ci -am 'Update styleguide (#{`date`})'"
     run 'git push origin gh-pages'
     run 'git co master'
