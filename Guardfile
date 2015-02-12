@@ -36,5 +36,5 @@ end
 #   watch(%r{file/path}) { `command(s)` }
 #
 guard :shell do
-  watch(/app\/(.*)/) {|m| `rake lsg:compile` }
+  watch(/stylesheets\/(.*)/) {|m| `rake lsg:compile` }
 end
