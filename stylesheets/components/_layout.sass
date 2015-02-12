@@ -11,22 +11,25 @@
 .layout-header
   background: $dark_gray
   height: 2.5em
+  position: relative
 
 .layout-header-container
-  width: 90%
-  margin: 0 1% 0 9%
+  width: 80%
+  margin: 0 1% 0 19%
   +clearfix
   *
     float: left
 
 .layout-header-logo
   padding: 0
-  margin: 0 1em 0 0
+  margin: 0 1em
   color: $white
-  text-align: right
+  text-align: left
   text-decoration: none
   @extend %huge-font
   line-height: 2em
+  position: absolute
+  left: 1em
 
 .layout-header-dingos
   text-align: right

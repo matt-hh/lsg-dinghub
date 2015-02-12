@@ -6,8 +6,8 @@ Layout
 @haml
 .layout
   .layout-header
+    %a.layout-header-logo(href='#') Dinghub
     .layout-header-container
-      %a.layout-header-logo(href='#') Dinghub
       .layout-header-dingos
         3000 Dingos
       %nav.layout-header-nav
