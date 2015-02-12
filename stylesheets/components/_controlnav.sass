@@ -1,0 +1,35 @@
+.controlnav
+  width: 100%
+  text-align: right
+  list-style: none
+  padding: 0
+  margin: 0
+.controlnav-item
+  margin-bottom: 0.3125em
+
+.controlnav-button
+  border: none
+  width: 6em
+  height: 1.5625em
+  text-align: left
+  padding-left: 1.5em
+  // line-height: 1.5625em
+  font-size: 100%
+  span
+    @extend %middle-font
+    // font-weight: bold
+  background: $dark-gray
+  color: $white
+  border-top-left-radius: 1em
+  border-bottom-left-radius: 1em
+  cursor: pointer
+  &.is-active,
+  &:hover
+    background: $middle-aqua
+    color: $white
+  &.is-disabled,
+  &:disabled,
+  &:disabled:hover
+    color: $middle_gray
+    background: $dark-gray
+    cursor: default

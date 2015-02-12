@@ -20,7 +20,7 @@ Layout
     .layout-main
       Content
     .layout-sidebar-right
-      Right sidebar
+      Control navigation
 ```
 
 First element with class .layout should be the body-element.
