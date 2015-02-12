@@ -22,3 +22,5 @@ Layout
     .layout-sidebar-right
       Right sidebar
 ```
+
+First element with class .layout should be the body-element.
