@@ -6,6 +6,7 @@
 
 .layout-container
   padding: 1em 0
+  +clearfix
 
 .layout-header
   background: $dark_gray
@@ -69,3 +70,14 @@
   width: 9.5em
   height: 1.9em
   @extend %default-font
+
+.layout-main
+  float: left
+  width: 86%
+  min-width: 55em
+
+.layout-sidebar-right
+  float: left
+  width: 14%
+  min-width: 8.5em
+  text-align: right

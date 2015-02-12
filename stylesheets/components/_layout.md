@@ -17,5 +17,8 @@ Layout
           %i.ion-icon.ion-search
         %input.layout-header-searchform-input(placeholder='Search')
   .layout-container
-    Content goes here
+    .layout-main
+      Content
+    .layout-sidebar-right
+      Right sidebar
 ```
